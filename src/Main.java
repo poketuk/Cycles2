@@ -4,11 +4,12 @@ public class Main {
         System.out.println("Задание 1");
         int part = 15_000;
         int total = 0;
-        int a = 1;
-        while (total < 2_459_000) {
+        int totalAmount = 2_459_000;
+        int month = 1;
+        while (total < totalAmount) {
             total = total + part;
-            System.out.println("Месяц " + a + ", сумма накоплений равна " + total + " рублей");
-            a++;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + total + " рублей");
+            month++;
         }
 
         // Задание 2
@@ -29,9 +30,9 @@ public class Main {
         int population = 12_000_000;
         float birthRate = (float) 17 / 1000;
         float deathRate = (float) 8 / 1000;
-        for (int c = 1; c < 11; c++) {
+        for (int year = 1; year < 11; year++) {
             population = population + Math.round(population * birthRate) - Math.round(population * deathRate);
-            System.out.println("Год " + c + ", численность населения составляет " + population);
+            System.out.println("Год " + year + ", численность населения составляет " + population);
         }
     }
 }
